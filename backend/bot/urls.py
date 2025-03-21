@@ -2,6 +2,7 @@ from django.urls import path, re_path
 from . import views
 
 urlpatterns = [
+    path('register/', views.register_view, name="register"),  # ✅ Added register route
     path('list/', views.BotList.as_view(), name="list"),
     path('details/<int:bot_id>/', views.BotDetails.as_view(), name="details"),
     path('internal/<int:bot_id>/', views.internal_bot_details),
