@@ -30,9 +30,8 @@ SECRET_KEY =os.getenv('SECRET_KEY')
 DEBUG = False
 import os
 
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'https://trading-bot-sw3n.onrender.com').split(',')
-
-
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'trading-bot-sw3n.onrender.com').split(',')
+CSRF_TRUSTED_ORIGINS = [f"https://{host}" for host in ALLOWED_HOSTS if host]  # Fix CSRF issues
 
 # Application definition
 
