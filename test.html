@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jelvix Clone</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+ 
+<style>
+
+.stats-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 500px;
+   
+   
+}
+@media (min-width: 769px){
+.boxy{
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'%3E%3Ccircle cx='2' cy='2' r='1' fill='%23CCCCCC' /%3E%3C/svg%3E");
+    background-size: 30px 20px; /* Adjust the dot spacing */
+    border-radius: 10px;
+    padding-bottom: 80px;
+}
+}
+
+</style>
+</head>
+<body>
+  <!-- Header -->
+  <header id="header">
+    <nav>
+      <div class="site-logo">
+        <a href="#"><img src="images/IMG-20250202-WA0000-removebg-preview.png" alt="Crete Logo"></a>
+
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li class="dropdown">
+          <a href="#services">Services</a>
+          <ul class="dropdown-menu">
+            <li><a href="#web-development">Web Development</a></li>
+            <li><a href="#mobile-development">Mobile Development</a></li>
+            <li><a href="#ai-ml">AI & ML</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#industries">Industries</a>
+            <ul class="dropdown-menu">
+                <li><a href="#web-development">Web Development</a></li>
+                <li><a href="#mobile-development">Mobile Development</a></li>
+                <li><a href="#ai-ml">AI & ML</a></li>
+              </ul>
+        
+        </li>
+        <li class="dropdown"><a href="#expertise">Expertise</a>
+            <ul class="dropdown-menu">
+                <li><a href="#web-development">Web Development</a></li>
+                <li><a href="#mobile-development">Mobile Development</a></li>
+                <li><a href="#ai-ml">AI & ML</a></li>
+              </ul>
+        </li>
+        <li class="dropdown"><a href="#technologies">Technologies</a>
+            <ul class="dropdown-menu">
+                <li><a href="#web-development">Web Development</a></li>
+                <li><a href="#mobile-development">Mobile Development</a></li>
+                <li><a href="#ai-ml">AI & ML</a></li>
+              </ul>
+        </li>
+        <li><a href="#case-studies">Case Studies</a></li>
+        <li><a href="#company">Company</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+      <div class="search-container">
+        <div class="search-icon" id="search-btn">
+          <i class="fas fa-search"></i>
+        </div>
+        <input type="text" class="search-bar" id="search-bar" placeholder="Search...">
+      </div>
+      <div class="men">
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu -->
+  <!-- Mobile Menu Overlay -->
+<div class="mobile-menu-overlay">
+    <div class="mobile-menu-content">
+        <!-- Close Button -->
+        <button class="close-btn">&times;</button>
+
+        <!-- Search Bar -->
+        <div class="mobile-search-container">
+            <input type="text" placeholder="Search...">
+            <i class="fas fa-search"></i>
+        </div>
+
+        <!-- Contact Button -->
+        
+
+        <!-- Mobile Navigation Links -->
+        <ul class="mobile-nav-links">
+            <li>
+                <a href="#" class="dropdown-toggle">Industries <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></a></span></a>
+                <ul class="drop-menu">
+                    <li><a href="#">Healthcare</a></li>
+                    <li><a href="#">Finance</a></li>
+                    <li><a href="#">Retail</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="dropdown-toggle">Services <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></a></span></a>
+                <ul class="drop-menu">
+                    <li><a href="#">Cloud Solutions</a></li>
+                    <li><a href="#">AI & Machine Learning</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="dropdown-toggle">Expertise <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></a></span></a>
+                <ul class="drop-menu">
+                    <li><a href="#">Cybersecurity</a></li>
+                    <li><a href="#">Big Data</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="dropdown-toggle">Technologies <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></a></span></a>
+                <ul class="drop-menu">
+                    <li><a href="#">Blockchain</a></li>
+                    <li><a href="#">IoT</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="dropdown-toggle">Case Studies</a>
+            </li>
+            <li>
+                <a href="#" class="dropdown-toggle">Company <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></a></span></a>
+                <ul class="drop-menu">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Blog</a>
+            </li>
+        </ul>
+        <a href="#" class="contact-button">Contact Us</a>
+    </div>
+</div>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="slideshow">
+      <div class="slide active">
+        <img src="images/close-up-image-programer-working-his-desk-office.jpg" alt="Slide 1">
+      </div>
+      <div class="slide">
+        <img src="images/person-working-html-computer.jpg" alt="Slide 2">
+      </div>
+      <div class="slide">
+        <video autoplay muted loop>
+          <source src="images/3202043-hd_1920_1080_25fps.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="overlay"></div>
+    </div>
+    <div class="hero-content">
+      <h1><span class="highlight" >WORLDWIDE</span> TECHNOLOGY ALLY FOR <span class="highlight"> DIGITAL</span> EVOLUTION AND <span class="highlight">SOFTWARE</span> DEVELOPMENT</h1>
+      <button class="cta-button">GET IN TOUCH</button>
+    </div>
+  </section>
+
+  <section class="who-we-are">
+    <div class="container">
+        <div class="content">
+            <h2><span class="highlight">Who</span> We Are</h2>
+            <p>
+                A global leader in software development that helps companies overtake the competition, 
+                we specialize in complex, sophisticated software solutions to transform businesses and industries.
+                Get world-class enterprise engineering, design, and consulting services to boost operations, 
+                enhance customer service, and automate business processes.
+            </p>
+            <a href="#" class="btn">MORE ABOUT US</a>
+        </div>
+<div class="boxy">
+        <div class="stats-grid">
+            <div class="stat-box">
+                <h3><span class="counter" data-target="270">0</span>+</h3>
+                <p>satisfied customers</p>
+            </div>
+            <div class="stat-box">
+                <h3><span class="counter" data-target="98">0</span>%</h3>
+                <p>customer retention rate</p>
+            </div>
+            <div class="stat-box">
+                <h3><span class="counter" data-target="15">0</span></h3>
+                <p>years in business</p>
+            </div>
+            <div class="stat-box">
+                <h3>$<span class="counter" data-target="100">0</span>K+</h3>
+                <p>our clients' overall revenue</p>
+            </div>
+            <div class="stat-box">
+                <h3><span class="counter" data-target="450">0</span>+</h3>
+                <p>team members</p>
+            </div>
+            <div class="stat-box">
+                <h3><span class="counter" data-target="5">0</span>/5</h3>
+                <p>customer satisfaction rating on Clutch</p>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
