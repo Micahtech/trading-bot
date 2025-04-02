@@ -93,3 +93,25 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const slider = document.querySelector(".testimonial-container");
+    const dots = document.querySelectorAll(".dot");
+    let index = 0;
+    
+    function updateSlider() {
+        slider.style.transform = `translateX(-${index * 50}%)`;
+        dots.forEach((dot, i) => {
+            dot.classList.toggle("active", i === index);
+        });
+    }
+
+    dots.forEach((dot, i) => {
+        dot.addEventListener("click", () => {
+            index = i;
+            updateSlider();
+        });
+    });
+
+    // Auto-slide every 5 seconds
+    
+});
