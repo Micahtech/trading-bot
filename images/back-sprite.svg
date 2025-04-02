@@ -1,0 +1,73 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <symbol id="check" viewBox="0 0 750 512">
+    <path fill="#3f60fa" d="M700.581 0l-434.925 434.925-227.108-227.108-38.547 38.528 265.655 265.655 473.472-473.454z"/>
+  </symbol>
+  <symbol id="checkbox" viewBox="0 0 615 512">
+    <path fill="#252525" d="M0 341.334l170.667 170.666 443.733-409.6v-102.4l-443.733 409.6-170.667-170.667z"></path>
+  </symbol>
+  <symbol id="checkbox-white" viewBox="0 0 615 512">
+    <path fill="#ffffff" d="M0 341.334l170.667 170.666 443.733-409.6v-102.4l-443.733 409.6-170.667-170.667z"></path>
+  </symbol>
+  <symbol id="angle-down" viewBox="0 0 838 512">
+    <path fill="#252525" d="M392.285 503.622l-340.248-351.092c-10.045-10.481-16.229-24.731-16.229-40.424s6.184-29.944 16.249-40.446l-0.020 0.021c9.89-10.329 23.791-16.749 39.191-16.749s29.302 6.42 39.172 16.73l0.018 0.019 301.056 310.644 301.056-310.644c9.888-10.315 23.779-16.725 39.168-16.725s29.28 6.41 39.149 16.706l0.019 0.019c10.045 10.481 16.229 24.731 16.229 40.424s-6.184 29.944-16.249 40.446l0.020-0.021-340.248 351.092c-9.905 10.279-23.791 16.663-39.168 16.663s-29.263-6.384-39.152-16.647l-0.016-0.017z"></path>
+  </symbol>
+  <symbol id="angle-down-white" viewBox="0 0 838 512">
+    <path fill="#ffffff" d="M392.285 503.622l-340.248-351.092c-10.045-10.481-16.229-24.731-16.229-40.424s6.184-29.944 16.249-40.446l-0.020 0.021c9.89-10.329 23.791-16.749 39.191-16.749s29.302 6.42 39.172 16.73l0.018 0.019 301.056 310.644 301.056-310.644c9.888-10.315 23.779-16.725 39.168-16.725s29.28 6.41 39.149 16.706l0.019 0.019c10.045 10.481 16.229 24.731 16.229 40.424s-6.184 29.944-16.249 40.446l0.020-0.021-340.248 351.092c-9.905 10.279-23.791 16.663-39.168 16.663s-29.263-6.384-39.152-16.647l-0.016-0.017z"></path>
+  </symbol>
+  <symbol id="arrow-right-white" viewBox="0 0 58 17">
+    <path id="gwp7a" d="M1627.5 628.5v-56h2v56z"/><path id="gwp7b" d="M1651.55 610.04v-12h2v12z"/><path id="gwp7c" d="M1651.55 602.95v-12h2v12z"/><g><g transform="rotate(-90 532.5 1104.5)"><use fill="#fff" xlink:href="#gwp7a"/></g><g transform="rotate(-135 729.893 639.37)"><use fill="#fff" xlink:href="#gwp7b"/></g><g transform="rotate(-45 137.893 2232.37)"><use fill="#fff" xlink:href="#gwp7c"/></g></g></symbol>
+  <symbol id="dot" viewBox="0 0 26 26">
+    <circle cx='15' cy='15' r='1.7' fill='#D0D0D0'/>
+  </symbol>
+  <symbol id="dot-white" viewBox="0 0 26 26">
+    <circle cx='15' cy='15' r='1.7' fill='#FFFFFF'/>
+  </symbol>
+  <symbol id="dot-dark" viewBox="0 0 26 26">
+    <circle cx='15' cy='15' r='1.5' fill='#555555'/>
+  </symbol>
+  <symbol id="dot-dark-big" viewBox="0 0 38 38">
+    <circle cx='15' cy='15' r='1.5' fill='#555555'/>
+  </symbol>
+  <symbol id="filter-black" viewBox="0 0 16 16">
+    <g transform="translate(-269.000000, -592.000000)" >
+      <g transform="translate(239.000000, 522.000000)">
+          <g transform="translate(1.000000, 38.000000)">
+              <path fill="#252525" d="M29.5710925,32 C29.3572568,32 29.1613879,32.1196397 29.0634546,32.3097312 C28.9655214,32.4998228 28.9819134,32.7286854 29.1059382,32.9028795 L34.7140767,40.754502 L34.7140767,47.4289527 C34.7141855,47.6395588 34.8301278,47.8330339 35.0157978,47.9324402 C35.2014678,48.0318465 35.4267655,48.0210688 35.6020987,47.904393 L39.0307548,45.6186222 C39.1898733,45.5127365 39.2855195,45.3343113 39.2856183,45.1431819 L39.2856183,40.754502 L44.8937568,32.9028795 C45.0177816,32.7286854 45.0341736,32.4998228 44.9362404,32.3097312 C44.8383071,32.1196397 44.6424382,32 44.4286025,32 L29.5710925,32 Z"></path>
+            </g>
+        </g>
+    </g>
+  </symbol>
+  <symbol id="filter-white" viewBox="0 0 16 16">
+    <g transform="translate(-269.000000, -592.000000)" >
+      <g transform="translate(239.000000, 522.000000)">
+         <g transform="translate(1.000000, 38.000000)">
+            <path fill="#ffffff" d="M29.5710925,32 C29.3572568,32 29.1613879,32.1196397 29.0634546,32.3097312 C28.9655214,32.4998228 28.9819134,32.7286854 29.1059382,32.9028795 L34.7140767,40.754502 L34.7140767,47.4289527 C34.7141855,47.6395588 34.8301278,47.8330339 35.0157978,47.9324402 C35.2014678,48.0318465 35.4267655,48.0210688 35.6020987,47.904393 L39.0307548,45.6186222 C39.1898733,45.5127365 39.2855195,45.3343113 39.2856183,45.1431819 L39.2856183,40.754502 L44.8937568,32.9028795 C45.0177816,32.7286854 45.0341736,32.4998228 44.9362404,32.3097312 C44.8383071,32.1196397 44.6424382,32 44.4286025,32 L29.5710925,32 Z"></path>
+          </g>
+      </g>
+    </g>
+  </symbol>
+  <view id="check-view" viewBox="0 0 750 512" />
+  <view id="checkbox-view" viewBox="0 512 615 512" />
+  <view id="checkbox-white-view" viewBox="0 1024 615 512" />
+  <view id="angle-down-view" viewBox="0 1536 838 512" />
+  <view id="angle-down-white-view" viewBox="0 2048 838 512" />
+  <view id="arrow-right-white-view" viewBox="0 2560 58 17" />
+  <view id="dot-view" width="26" height="26" viewBox="0 2577 26 26" />
+  <view id="dot-dark-view" width="26" height="26" viewBox="0 2603 26 26" />
+  <view id="dot-dark-big-view" width="38" height="38" viewBox="0 2629 38 38" />
+  <view id="dot-white-view" width="26" height="26" viewBox="0 2667 26 26" />
+  <view id="filter-black-view" viewBox="0 2693 16 16" />
+  <view id="filter-white-view" viewBox="0 2709 16 16" />
+  <use xlink:href="#check" width="750" height="512" x="0" y="0"></use>
+  <use xlink:href="#checkbox" width="615" height="512" x="0" y="512"></use>
+  <use xlink:href="#checkbox-white" width="615" height="512" x="0" y="1024"></use>
+  <use xlink:href="#angle-down" width="838" height="512" x="0" y="1536"></use>
+  <use xlink:href="#angle-down-white" width="838" height="512" x="0" y="2048"></use>
+  <use xlink:href="#arrow-right-white" width="58" height="17" x="0" y="2560"></use>
+  <use xlink:href="#dot" width="26" height="26" x="0" y="2577"></use>
+  <use xlink:href="#dot-dark" width="26" height="26" x="0" y="2603"></use>
+  <use xlink:href="#dot-dark-big" width="38" height="38" x="0" y="2629"></use>
+  <use xlink:href="#dot-white" width="26" height="26" x="0" y="2667"></use>
+  <use xlink:href="#filter-black" width="16" height="16" x="0" y="2693"></use>
+  <use xlink:href="#filter-white" width="16" height="16" x="0" y="2709"></use>
+</svg>

@@ -76,3 +76,20 @@ let observer = new IntersectionObserver(startCounter, {
 });
 
 observer.observe(document.querySelector(".stats-container"));
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const tabs = document.querySelectorAll(".tab");
+    const contents = document.querySelectorAll(".content");
+
+    tabs.forEach(tab => {
+        tab.addEventListener("click", function () {
+            tabs.forEach(t => t.classList.remove("active"));
+            contents.forEach(c => c.classList.remove("active"));
+
+            this.classList.add("active");
+            document.getElementById(this.getAttribute("data-target")).classList.add("active");
+        });
+    });
+});
+
