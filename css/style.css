@@ -270,7 +270,7 @@
 }
 
 .tab {
-    font-size: 24px;
+    font-size: 50px;
     font-weight: bold;
     background: none;
     border: none;
@@ -280,8 +280,9 @@
 }
 
 .tab.active {
-    color: #1E50D4; /* Active color */
-    border-bottom: 3px solid #1E50D4;
+    color: var(--secondary-color); /* Active color */
+    border-bottom: 3px solid var(--secondary-color);
+    font-family: var(--bold-font);
 }
 
 .section-description {
@@ -350,13 +351,16 @@
     }
 
     .tab {
-        font-size: 20px;
+        font-size: 28px;
+    }
+    .services-expertise{
+        margin-top: -150px;
     }
 }
 
 @media (max-width: 480px) {
     .tab {
-        font-size: 18px;
+        font-size: 28px;
     }
 }
 
