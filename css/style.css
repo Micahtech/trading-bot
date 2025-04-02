@@ -385,10 +385,13 @@
 
 }
 .section-header h2 {
-    font-size: 32px;
+    font-size: 23px;
     font-weight: bold;
     margin-bottom: 20px;
     text-align: left;
+}
+.section-header span{
+    font-family: var(--bold-font);
 }
 
 .section-header h2 span {
@@ -414,6 +417,7 @@
     margin: 0;
     text-align: left;
     font-family: var(--medium-font);
+    margin-left: -110px;
 }
 
 .cta-button:hover {
