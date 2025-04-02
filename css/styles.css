@@ -125,7 +125,7 @@ header.scrolled nav ul li a {
 }
 
 .contact {
-    background:   #4B8A3D;
+    background:   var(--secondary-color);
     padding: 10px 15px;
     border-radius: 5px;
     color: white !important;
@@ -174,14 +174,14 @@ header.scrolled nav ul li a {
 
 
 .blue {
-    color:   #4B8A3D;
+    color:   var(--secondary-color);
     font-family: 'CustomFont', "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 }
 
 .btn {
     display: inline-block;
-    background:   #4B8A3D;
+    background:   var(--secondary-color);
     color: white;
     padding: 20px 25px;
     margin-top: 20px;
@@ -286,7 +286,7 @@ header.scrolled nav ul li a {
 
     
 header{
-    border-right: 60px solid  #4B8A3D;
+    border-right: 60px solid  var(--secondary-color);
 }
 .menu{
 }
@@ -331,7 +331,7 @@ margin-right: -78px;
 }
 
 .about-content .highlight {
-    color:  #4B8A3D;
+    color:  var(--secondary-color);
     font-family: var(--bold-font);
     font-weight: bold;
 }
@@ -348,7 +348,7 @@ margin-right: -78px;
     display: inline-block;
     margin-top: 20px;
     padding: 18px 45px;
-    background:  #4B8A3D;
+    background:  var(--secondary-color);
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -401,15 +401,20 @@ color: #252525;
     .about-section {
         flex-direction: column;
         text-align: center;
+        padding: 20px;
     }
 
     .stats-container {
         grid-template-columns: 1fr;
+        padding-top: 40px;
     }
 
     .dots-bg {
-        width: 200%;
-        left: -50%;
+        
+        display: none;
+    }
+    .stat-box span{
+        font-size: 30px;
     }
 }
 

@@ -121,3 +121,16 @@
     min-width: 100px;
     min-height: 50px;
 }
+@media (max-width: 768px) {
+    .customers-image{
+        display: none;
+    }
+    .customers-content{
+        padding: 20px;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+    .customers-content h2, .customers-content p{
+        padding: 20px;
+    }
+}
