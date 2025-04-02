@@ -1,0 +1,123 @@
+
+:root {
+    --primary-color: #4B8A3D;
+    --secondary-color: #fd8c0f;
+    --background-color: #fff;
+    --text-color: #444;
+    --light-text-color: #fff;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --bold-font: 'CustomFont', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --medium-font: 'MediumFont', "Helvetica Neue", Helvetica, Arial, sans-serif;
+--light-font: 'LightFont', "Helvetica Neue", Helvetica, Arial, sans-serif;
+--text-font: 'TextFont', "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+}
+
+
+@font-face {
+    font-family: 'TextFont';
+    src: url('fonts/gothampro.ttf') format('truetype');
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('fonts/gothampro_bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MediumFont';
+    src: url('fonts/gothampro_medium.ttf') format('truetype');
+    font-weight: medium;
+    font-style: medium;
+}
+
+@font-face {
+    font-family: 'LightFont';
+    src: url('fonts/gothampro_light.ttf') format('truetype');
+    font-weight: ;
+    font-style: ;
+}
+
+
+@font-face {
+    font-family: 'BodyFont';
+    src: url('fonts/gothampro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+.customers-section{
+    display: flex;
+    padding: 0px;
+    align-items: center;
+    gap: 0px;
+    padding-top: 120px;
+    overflow: visible;
+}
+.customers-image{
+    width: 50%;
+    
+    height: 650px;
+
+}
+.customers-image img{
+    width: 100%;
+    max-width: 800px;
+    height: 550px;
+}
+.customers-content {
+    flex: 1;
+    padding: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #2D2D2D;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: -200px;
+    height: 550px;
+    padding-top: 0px;
+    padding-left: 80px;
+}
+
+.customers-content h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #fff;
+    font-family: var(--bold-font);
+}
+
+.customers-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    opacity: 0.9;
+    color: #fff;
+}
+
+.logo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    color: #111;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    min-width: 100px;
+    min-height: 50px;
+}

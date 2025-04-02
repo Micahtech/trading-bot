@@ -125,7 +125,7 @@ header.scrolled nav ul li a {
 }
 
 .contact {
-    background:  #fd8c0f;
+    background:   #4B8A3D;
     padding: 10px 15px;
     border-radius: 5px;
     color: white !important;
@@ -174,14 +174,14 @@ header.scrolled nav ul li a {
 
 
 .blue {
-    color:  #fd8c0f;
+    color:   #4B8A3D;
     font-family: 'CustomFont', "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 }
 
 .btn {
     display: inline-block;
-    background:  #fd8c0f;
+    background:   #4B8A3D;
     color: white;
     padding: 20px 25px;
     margin-top: 20px;
@@ -286,7 +286,7 @@ header.scrolled nav ul li a {
 
     
 header{
-    border-right: 60px solid #fd8c0f;
+    border-right: 60px solid  #4B8A3D;
 }
 .menu{
 }
@@ -331,14 +331,14 @@ margin-right: -78px;
 }
 
 .about-content .highlight {
-    color: #fd8c0f;
+    color:  #4B8A3D;
     font-family: var(--bold-font);
     font-weight: bold;
 }
 
 .about-content p {
     font-size: 15px;
-    color: #252525;
+    color: #2d2d2d;
     line-height: 1.6;
     font-family: var(--text-font);
     padding-bottom: 20px;
@@ -348,8 +348,8 @@ margin-right: -78px;
     display: inline-block;
     margin-top: 20px;
     padding: 18px 45px;
-    background: #fd8c0f;
-    color: rgb(243, 241, 236);
+    background:  #4B8A3D;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
 }
@@ -360,17 +360,19 @@ margin-right: -78px;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     position: relative;
+    overflow-y: visible;
 }
 
 .dots-bg {
     position: absolute;
+    overflow: visible;
     width: 150%;
-    height: 150%;
+    height: 7000px;
     background: radial-gradient(black 1px, transparent 1px);
     background-size: 10px 10px;
     top: -20%;
     left: -25%;
-    z-index: -1;
+    z-index: 100;
 }
 
 .stat-box {
