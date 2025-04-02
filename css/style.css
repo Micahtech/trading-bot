@@ -487,14 +487,20 @@
 /* Responsive Styles */
 @media (max-width: 768px) {
     .case-info {
-        bottom: 10px;
-        left: 10px;
+        bottom: -10px;
+        left: -10px;
         padding: 10px;
         max-width: 90%;
     }
 
     .case-info h3 {
-        font-size: 14px;
+        font-size: 15px;
+    }
+    .case-studies{
+        padding: 20px;
+    }
+    .country{
+        font-size: 15px;
     }
 }
 
@@ -505,11 +511,18 @@
 
     .case-info {
         padding: 8px;
-        bottom: 5px;
-        left: 5px;
+        bottom: -10px;
+        left: -10px;
+        padding-bottom: 30px;
     }
 
     .case-info h3 {
-        font-size: 12px;
+        font-size: 15px;
+    }
+    .cta-button{
+        margin-left: 0px;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
     }
 }
