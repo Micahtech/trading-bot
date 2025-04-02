@@ -375,54 +375,64 @@
 /* General Styles */
 .case-studies {
     text-align: center;
-    padding: 50px 20px;
+    padding: 50px 70px;
     background: #fff;
 }
+.section-header{
+    max-width: 900px;
+    align-items: left;
+    justify-content: left;
 
+}
 .section-header h2 {
     font-size: 32px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: left;
 }
 
 .section-header h2 span {
-    color: #1E50D4;
+    color: var(--secondary-color);
 }
 
 .section-header p {
     max-width: 700px;
     margin: 0 auto 20px;
-    color: #666;
+    color: #252525;
+    text-align: left;
+    padding-bottom: 20px;
 }
 
 .cta-button {
     display: inline-block;
-    padding: 12px 20px;
-    background: #1E50D4;
+    padding: 18px 25px;
+    background: var(--secondary-color);
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
+    font-size: 15px;
     transition: 0.3s;
+    margin: 0;
+    text-align: left;
+    font-family: var(--medium-font);
 }
 
 .cta-button:hover {
-    background: #143D9B;
+    background: var(--primary-color);
 }
 
 /* Case Grid */
 .case-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 80px;
     margin-top: 30px;
 }
 
 /* Case Item */
 .case-item {
     position: relative;
-    overflow: hidden;
-    border-radius: 8px;
+    overflow: visible;
+    border-radius: 0px;
 }
 
 .case-item img {
@@ -430,6 +440,7 @@
     height: auto;
     display: block;
     transition: transform 0.3s ease;
+    overflow: visible;
 }
 
 .case-item:hover img {
@@ -439,30 +450,34 @@
 /* Case Info */
 .case-info {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
-    background: rgba(255, 255, 255, 0.9);
+    bottom: -10px;
+    left: -10px;
+    background: rgb(253, 252, 252);
     padding: 15px;
-    border-radius: 5px;
+    padding-bottom: 50px;
     text-align: left;
     max-width: 80%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    z-index: 2000;
 }
 
 .country {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: bold;
-    color: #1E50D4;
+    color: var(--secondary-color);
+    font-family: var(--bold-font);
 }
 
 .case-info h3 {
     font-size: 16px;
     margin: 5px 0;
+    color: #252525;
 }
 
 .category {
     font-size: 12px;
     font-weight: bold;
-    color: #888;
+    color: #555;
 }
 
 /* Responsive Styles */
