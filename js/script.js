@@ -168,11 +168,17 @@ const leftArrow = document.querySelector('.scroll-btn.left');
 const rightArrow = document.querySelector('.scroll-btn.right');
 
 function scrollLeft() {
-    scrollContainer.scrollBy({ left: -200, behavior: 'smooth' });
-    updateArrows();
+    if (!scrollContainer) return;
+    try {
+        scrollContainer.scrollBy({ left: -50, behavior: 'smooth' });
+        updateArrows();
+    } catch (error) {
+        console.error("Error during scrolling:", error);
+    }
 }
 
 function scrollRight() {
+    if (scrollContainer === null) return;
     scrollContainer.scrollBy({ left: 200, behavior: 'smooth' });
     updateArrows();
 }

@@ -40,8 +40,7 @@
 @font-face {
     font-family: 'LightFont';
     src: url('fonts/gothampro_light.ttf') format('truetype');
-    font-weight: ;
-    font-style: ;
+
 }
 
 
@@ -220,7 +219,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: ;
     color: #111;
     padding: 10px 20px;
     font-weight: bold;
@@ -717,7 +715,7 @@ font-family: "GothamProRegular";
 .section-header p {
     max-width: 700px;
     margin: 0 auto 30px;
-    color: ;
+    
 }
 
 /* Testimonial Slider */
@@ -947,7 +945,6 @@ color: #252525;
     gap: 20px;
     overflow-x: auto;
     scroll-behavior: smooth;
-    white-space: nowrap;
     -ms-overflow-style: none; /* Hide scrollbar for IE & Edge */
     scrollbar-width: none; /* Hide scrollbar for Firefox */
 }
@@ -961,6 +958,11 @@ color: #252525;
     background: #fff;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     text-align: center;
+    max-width: 330px;
+    
+}
+.blog-metar{
+    max-width: 330px;
 }
 
 .blog-card img {
@@ -968,13 +970,15 @@ color: #252525;
     padding: 0px;
     opacity: 0.8;
     filter: blur(0px) brightness(70%);
+    height: 200px;
+    max-width: 330px;
+
 
 
 }
 
 .blog-card h3 {
     font-size: 1rem;
-    margin: 10px 0;
     padding: 15px;
     color: #333;
     font-family: var(--bold-font);
@@ -1022,4 +1026,19 @@ color: #252525;
         overflow: hidden;
         width: 100%;
     }
+}
+.scroll-btn.right{
+    background: none;
+    border: none;
+    float: right;
+    position: relative;
+    
+    margin-right: -30px;
+    z-index: 2000;
+}
+.scroll-btn.left{
+    background: none;
+    border: none;
+    position: relative;
+
 }
