@@ -880,4 +880,8 @@ color: #252525;
     .blog-card {
         flex: 0 0 100%;
     }
+    .blog-slider{
+        overflow: hidden;
+        width: 100%;
+    }
 }
