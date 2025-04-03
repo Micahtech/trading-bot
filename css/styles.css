@@ -1,7 +1,7 @@
 /* General Styles */
 :root {
     --primary-color: #4B8A3D;
-    --secondary-color: #fd8c0f;
+    --secondary-color: #fd5a0f;
     --background-color: #fff;
     --text-color: #444;
     --light-text-color: #fff;
@@ -420,6 +420,9 @@ color: #252525;
         margin: 0 auto;
         width: 100%;
         text-align: center;
+    }
+    .stat-box p{
+        
     }
 }
 

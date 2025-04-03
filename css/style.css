@@ -1,7 +1,7 @@
 
 :root {
     --primary-color: #4B8A3D;
-    --secondary-color: #fd8c0f;
+    --secondary-color: #fd5a0f;
     --background-color: #fff;
     --text-color: #444;
     --light-text-color: #fff;
@@ -231,7 +231,7 @@
 @media (max-width: 768px) {
     .video-container {
         width: 95%;
-        margin-top: -200px;
+        margin-top: -130px;
 
     }
 
@@ -295,7 +295,9 @@
 .section-description {
     max-width: 800px;
     margin: 20px auto;
-    color: #555;
+    color: #414141;
+    font-family: var(--medium-font);
+    font-size: 14px;
 }
 
 /* Content Sections */
@@ -341,9 +343,9 @@
 }
 
 .service-box .text p {
-    color: #333;
+    color: #414141;
     font-size: 14px;
-    font-family: var(--text-font);
+    font-family: var(--medium-font);
 }
 
 /* Responsive Styles */
@@ -401,9 +403,12 @@
 .section-header p {
     max-width: 700px;
     margin: 0 auto 20px;
-    color: #252525;
+    color: #414141;
     text-align: left;
     padding-bottom: 20px;
+    font-size: 15px;
+    font-family: var(--medium-font);
+
 }
 
 .cta-button {
@@ -445,10 +450,14 @@
     display: block;
     transition: transform 0.3s ease;
     overflow: visible;
+    opacity: 0.8;
+    filter: blur(0px) brightness(70%);
 }
 
 .case-item:hover img {
     transform: scale(1.1);
+    opacity: 1;
+    filter: brightness(100%);
 }
 
 /* Case Info */
@@ -464,7 +473,9 @@
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     z-index: 2000;
 }
-
+.case-info:hover{
+    transform: scale(1.1);
+}
 .country {
     font-size: 15px;
     font-weight: bold;
@@ -574,13 +585,13 @@
 }
 
 .testimonials.section-header h2 span {
-    color: #1E50D4;
+    color: var(--secondary-color);
 }
 
 .section-header p {
     max-width: 700px;
     margin: 0 auto 30px;
-    color: #666;
+    color: ;
 }
 
 /* Testimonial Slider */
@@ -665,8 +676,8 @@ margin-top: -50px;
     .testimonial {
         flex-direction: column;
         text-align: center;
-        padding: 15px;
-        max-width: 300px;
+        padding: 20px;
+        max-width: 350px;
     }
 
     .testimonial img {
@@ -717,10 +728,10 @@ margin-top: -50px;
 }
 .conte{
     width: 100%;
-    color: #4e4e4e;
-    font-size: 14px;
-font-family: 'BodyFont', "Helvetica Neue", Helvetica, Arial, sans-serif;
-font-weight: 500;
+    color: #414141;
+    font-size: 12px;
+    font-family: 'BodyFont', "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-weight: bold;
 }
 @media (max-width: 768px){
     .lefty{
@@ -752,12 +763,15 @@ font-weight: 500;
     width: 60%;
     margin-left: 900px;
     z-index: 0;
-    height: 1200px;
+    height: 1900px;
 }
 
 .testimonials .section-head p{
     text-align: left;
     max-width: 600px;
+    font-family: var(--medium-font);
+    color: #252525;
+    font-size: 14px;
 }
 .testimonials .section-head{
     padding-left: 60px;
@@ -771,4 +785,99 @@ color: #252525;
 .section-head span{
     color: var(--secondary-color);
     font-family: var(--bold-font);
+}
+@media (max-width: 768px){
+    .testimonials .section-head{
+        padding-left: 0px;
+        margin: 0 auto;
+    }
+}
+
+.featured-content {
+    text-align: left;
+    padding: 50px 5%;
+    position: relative;
+}
+
+.featured-content h2 {
+    font-size: 36px;
+    padding-bottom: 25px;
+}
+.featured-content strong{
+    font-family: var(--bold-font);
+}
+.blog-slider {
+    overflow: scroll;
+    position: relative;
+    width: fit-content;
+}
+
+.blog-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 20px;
+}
+
+.blog-card {
+    flex: 0 0 33.33%;
+    background: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    text-align: center;
+}
+
+.blog-card img {
+    width: 100%;
+    padding: 0px;
+    opacity: 0.8;
+    filter: blur(0px) brightness(70%);
+
+
+}
+
+.blog-card h3 {
+    font-size: 1rem;
+    margin: 10px 0;
+    padding: 15px;
+    color: #333;
+    font-family: var(--bold-font);
+    text-align: left;
+    margin-bottom: -20px;
+}
+
+.blog-card a {
+    color: #fd5a0f;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 13px;
+    text-align: left;
+    margin: 0;
+    display: block;
+    padding: 15px;
+}
+
+.slide-dots {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.slide-dots .dott {
+    width: 12px;
+    height: 12px;
+    background: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.slide-dots .dott.active {
+    background: #333;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .blog-card {
+        flex: 0 0 100%;
+    }
 }

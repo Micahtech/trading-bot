@@ -115,3 +115,50 @@ document.addEventListener("DOMContentLoaded", function () {
     // Auto-slide every 5 seconds
     
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const slider = document.querySelector(".blog-wrapper");
+    const dotsContainer = document.querySelector(".slide-dots");
+    const blogCards = document.querySelectorAll(".blog-card");
+    let index = 0;
+    const totalBlogs = blogCards.length;
+
+    // Determine how many blogs to show based on screen size
+    function getSlidesPerView() {
+        return window.innerWidth <= 768 ? 1 : 3;
+    }
+
+    function updateSlider() {
+        const slidesPerView = getSlidesPerView();
+        slider.style.transform = `translateX(-${index * (100 / slidesPerView)}%)`;
+
+        document.querySelectorAll(".dott").forEach((dot, i) => {
+            dot.classList.toggle("active", i === index);
+        });
+    }
+
+    function createDots() {
+        dotsContainer.innerHTML = "";
+        const slidesPerView = getSlidesPerView();
+        const dotsCount = Math.ceil(totalBlogs / slidesPerView);
+
+        for (let i = 0; i < dotsCount; i++) {
+            const dot = document.createElement("span");
+            dot.classList.add("dott");
+            if (i === 0) dot.classList.add("active");
+            dot.addEventListener("click", () => {
+                index = i;
+                updateSlider();
+            });
+            dotsContainer.appendChild(dot);
+        }
+    }
+
+    window.addEventListener("resize", function () {
+        createDots();
+        updateSlider();
+    });
+
+    createDots();
+    updateSlider();
+});
