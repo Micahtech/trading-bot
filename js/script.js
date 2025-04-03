@@ -162,3 +162,31 @@ document.addEventListener("DOMContentLoaded", function () {
     createDots();
     updateSlider();
 });
+
+const scrollContainer = document.querySelector('.blog-wrapper');
+const leftArrow = document.querySelector('.scroll-btn.left');
+const rightArrow = document.querySelector('.scroll-btn.right');
+
+function scrollLeft() {
+    scrollContainer.scrollBy({ left: -200, behavior: 'smooth' });
+    updateArrows();
+}
+
+function scrollRight() {
+    scrollContainer.scrollBy({ left: 200, behavior: 'smooth' });
+    updateArrows();
+}
+
+// Show/hide arrows based on scroll position
+function updateArrows() {
+    setTimeout(() => {
+        leftArrow.style.display = scrollContainer.scrollLeft > 0 ? "flex" : "none";
+
+        const maxScrollLeft = scrollContainer.scrollWidth - scrollContainer.clientWidth;
+        rightArrow.style.display = scrollContainer.scrollLeft < maxScrollLeft ? "flex" : "none";
+    }, 300);
+}
+
+// Check arrow visibility when scrolling
+scrollContainer.addEventListener("scroll", updateArrows);
+
